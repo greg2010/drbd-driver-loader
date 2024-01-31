@@ -4,7 +4,7 @@ NOCACHE ?= false
 PLATFORMS ?= linux/amd64
 
 ifdef IMAGE_NAME
-IMAGE_NAME := $(IMAGE_NAME)
+IMAGE_NAME := $(REGISTRY)/$(IMAGE_NAME)
 else
 IMAGE_NAME := drbd-driver-loader
 endif
